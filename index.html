@@ -1,15 +1,104 @@
+<!DOCTYPE html>
 <html>
-	<head>
-	</head>
-		<h1>Site under construction</h1>
-		<IMG SRC="docs/patty.gif">
-	</div>
-	<body>
+<head>
+    <title>Login Screen</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #387194;
+            background-image: linear-gradient(315deg, #387194 0%, #389454 74%);
+            height: 100vh;
+        }
 
+        .login-box {
+            width: 320px;
+            height: 400px;
+            background: #ffffff;
+            opacity: 0.8;
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 70px 30px;
+        }
 
+        .login-box h1 {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+            color: royalblue;
+        }
 
-		
-		
-		
-	</body>
+        .textbox {
+            width: 100%;
+            overflow: hidden;
+            font-size: 20px;
+            padding: 8px 0;
+            margin: 8px 0;
+            border-bottom: 1px solid royalblue;
+        }
+
+        .textbox input {
+            border: none;
+            outline: none;
+            background: none;
+            color: royalblue;
+            font-size: 18px;
+            width: 80%;
+            float: left;
+            margin: 0 10px;
+        }
+
+        .btn {
+            width: 100%;
+            background-color: royalblue;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 0;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .new-user {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 30px;
+            color: royalblue;
+        }
+    </style>
+</head>
+<body>
+<div class="login-box">
+    <h1>Login</h1>
+    <div class="textbox">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Username" />
+    </div>
+
+    <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" />
+    </div>
+
+    <button class="btn">Login</button>
+
+    <div class="new-user">
+        New User? <button class="btn">Register Here</button>
+    </div>
+
+</div>
+
+<script
+        src="https://kit.fontawesome.com/64d58efce2.js"
+        crossorigin="anonymous"
+></script>
+</body>
 </html>
